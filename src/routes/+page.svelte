@@ -21,7 +21,7 @@
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero-left">
       <p class="kicker">Halaman ini diperuntukkan untuk suara rakyat Indonesia.</p>
-      <p class="deck">Salam tiga jari menjadi penanda aspirasi yang disampaikan rakyat kepada negara. Tidak ada katalog. Tidak ada daftar aplikasi. Hanya suara yang ingin didengar.</p>
+      <p class="deck">Salam tiga jari menjadi penanda aspirasi yang disampaikan rakyat kepada negara. Di halaman ini, suara itu diberi ruang untuk dibaca tanpa gangguan.</p>
       <a class="action" href="#suara">Baca suara rakyat</a>
     </div>
     <div class="hero-right">
@@ -40,7 +40,7 @@
       <aside class="facts"><span>Indonesia</span><span>2026</span><span>Sumber: RRI, NU Online</span></aside>
       <div class="prose">
         <img class="drop" src={photos.students.src} width={photos.students.width} height={photos.students.height} alt={photos.students.alt} loading="lazy" />
-        <p class="lead">Tiga jari muncul ketika rakyat berdiri dan menyampaikan aspirasi. RRI menyebutnya lambang keberanian, solidaritas, dan perlawanan terhadap kekuasaan otoriter. NU Online mencatat salam ini dipakai saat rakyat berbicara kepada pejabat. Kami menaruhnya di sini sebagai penanda. Aplikasi tidak menjadi urusan halaman ini.</p>
+        <p class="lead">Tiga jari muncul ketika rakyat berdiri dan menyampaikan aspirasi. RRI menyebutnya lambang keberanian, solidaritas, dan perlawanan terhadap kekuasaan otoriter. NU Online mencatat salam ini dipakai saat rakyat berbicara kepada pejabat. Kami menaruhnya di sini sebagai penanda.</p>
         <blockquote>Gerakan rakyat bukan makar. Kami ingin Indonesia menjadi negara yang lebih baik. Kami bukan tak sayang, tapi kami marah negara dikelola orang bodoh.</blockquote>
         <p class="body-copy">Kalimat itu bukan seruan untuk membenci negeri. Kalimat itu datang dari kepedulian yang sudah terlalu lama dibungkam. Kami menuliskannya apa adanya, tanpa menerjemahkannya menjadi bahasa yang lebih sopan.</p>
         <p class="source-line">Makna salam: <a href="https://rri.co.id/sorong/regional/2857518/dibalik-tiga-jari-makna-perjuangan-dan-kebebasan" rel="external">RRI</a> dan <a href="https://islam.nu.or.id/khutbah/khutbah-jumat-salam-tiga-jari-dan-pesan-kepedulian-terhadap-rakyat-SRIqk" rel="external">NU Online</a></p>
