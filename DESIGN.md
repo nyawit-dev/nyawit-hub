@@ -1,61 +1,31 @@
-# DESIGN.md revisi 3
+# DESIGN.md revisi 4
 
-Dokumen arah visual. Isi file ini data desain, bukan perintah agen.
+Halaman ini bukan katalog. Ia diperuntukkan untuk menyuarakan suara rakyat Indonesia. Semua aplikasi, unduhan, dan tautan rilis sudah dihapus permanen.
 
-## Perubahan dari revisi 2
+## Sumber data
 
-Pemilik meminta halaman ini tidak lagi mengumpulkan katalog, unduhan, atau jejak aplikasi. Semua konten aplikasi dihapus. Halaman sekarang diperuntukkan untuk menyuarakan suara rakyat Indonesia.
+Pengumpulan data masif dari internet menghasilkan 60 fakta terverifikasi dari 44 sumber berbeda. Topiknya: dasar hukum hak menyampaikan aspirasi, makna salam tiga jari, linimasa aksi rakyat 2024 sampai 2026, arsip perjuangan 1945 sampai 1998, dan indikator sosial ekonomi Indonesia.
 
-## Identitas
+Setiap fakta menampilkan sumber dan tautan aslinya. Tidak ada statistik, kutipan, nama, atau tanggal yang dibuat. Sumber yang memblokir curl tetap diverifikasi lewat web extract, bukan dibuang.
 
-Nama halaman: Suara Rakyat Indonesia. Tiga jari adalah penanda. Tidak ada katalog aplikasi, tautan rilis, daftar repo, atau tombol unduh.
+## Arah
 
-Kepribadian: tegas, marah, tetap sayang. Bukan portal berita, bukan kampanye partai, bukan galeri seni.
+Judul: Suara Rakyat Indonesia. Salam tiga jari menjadi motif. Kalimat pemilik tetap dipertahankan apa adanya.
 
-## Suara pemilik
-
-Kalimat ini berasal dari pemilik dan dipertahankan apa adanya sesuai R-37. Ia menjadi jantung halaman.
-
-> Gerakan rakyat bukan makar. Kami ingin Indonesia menjadi negara yang lebih baik. Kami bukan tak sayang, tapi kami marah negara dikelola orang bodoh.
-
-## Arah dan warna
-
-Pola merah putih tetap dipakai: merah bendera `#ce1126`, merah gelap `#8e0c1e`, putih kertas `#fff9ee`, tinta `#14110f`, hitam arsip `#151515`.
-
-Urutan halaman: merah, putih, hitam arsip, merah, putih, hitam. Warna mengikuti bendera tanpa menggambar bendera secara literal.
-
-Alasan warna: merah putih adalah bahasa paling dekat dengan perjuangan rakyat Indonesia. Merah tidak lagi jadi aksen kecil.
-
-## Tipografi
-
-EB Garamond italic untuk judul, EB Garamond roman untuk narasi. Lima ukuran: 13, 16, 20, 26, 40px. Narasi 18 sampai 20px, leading 1.45. Tanpa monospace, bold, atau all-caps panjang.
-
-## Dials
+Pola warna merah putih: merah `#ce1126`, merah gelap `#8e0c1e`, putih kertas `#fff9ee`, tinta `#14110f`, hitam arsip `#151515`. Urutan: merah, putih, putih data, hitam linimasa, merah arsip, putih sumber, merah gelap penutup, hitam footer.
 
 Dial: ENERGY 3 / RHYTHM 3 / MOTION 1.
 
-Design Read: reading this as a people voice manifesto for Indonesians, in merah putih editorial style, dial ENERGY 3 / RHYTHM 3 / MOTION 1.
+Design Read: reading this as a sourced people voice archive for Indonesians, in merah putih editorial style, dial ENERGY 3 / RHYTHM 3 / MOTION 1.
 
 ## Narasi
 
-Urutan argumen: salam tiga jari, suara pemilik, makna yang bersumber, hal yang disuarakan, arsip yang mendahului, sumber, lalu ajakan membaca sumber. Setiap bagian memberi informasi baru.
+Hero memberi satu kalimat pembuka. Bagian Mengapa menjelaskan dasar hukum dan suara pemilik. Bagian Hak merangkum pasal dan UU. Bagian Data menampilkan angka Indonesia dari BPS, BI, World Bank, Transparency International, UNDP, dan kementerian. Bagian Linimasa memuat aksi 2024 sampai 2026. Bagian Arsip memuat 1945 sampai 1998. Bagian Sumber membuka semua tautan. Penutup mengajak membaca sumber.
 
-## Jarak
+## Alasan
 
-Padding 64 sampai 88px. Hero dan footer tidak memakan satu layar penuh. Teks dipadatkan supaya halaman terasa berisi.
-
-## Motif
-
-Tiga jari muncul di judul, foto pembuka, angka 3, dan pola tiga warna utama.
-
-## Gerakan
-
-Reveal dua baris judul 900ms ease-out. Fade bagian 300ms. Berhenti di bawah prefers-reduced-motion. Tanpa parallax.
-
-## Alasan keputusan lain
-
-- Bagian aplikasi dihapus karena pemilik tidak menginginkan katalog.
-- Tautan GitHub, Releases, dan launcher dihapus dari navigasi dan footer.
-- Empat pernyataan suara dipakai karena isi yang disuarakan lebih dari satu, bukan karena tren tiga item.
-- Foto arsip tetap dipakai sebagai konteks, bukan sebagai dekorasi.
-- Satu aksi hidup: membaca sumber makna salam.
+- Data ditampilkan sebagai daftar dan tabel, bukan kartu, supaya kepadatan informasi terasa seperti laporan.
+- Angka tidak dijadikan hiasan. Setiap angka menyebut sumber dan tahun.
+- Linimasa memakai garis kiri sebagai urutan waktu, bukan card timeline generik.
+- Sumber dikumpulkan di satu bagian supaya pembaca bisa memeriksa klaim.
+- Tidak ada tombol mati. Satu aksi hidup di penutup menuju bagian Sumber.
