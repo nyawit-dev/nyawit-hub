@@ -64,6 +64,8 @@ jobs:
     needs: deploy
     runs-on: ubuntu-latest
     steps:
+      - name: Set release tag
+        run: echo "RELEASE_TAG=${{ inputs.tag || github.ref_name }}" >> "$GITHUB_ENV"
       - uses: actions/download-artifact@v4
         with:
           name: nyawit-hub-site
