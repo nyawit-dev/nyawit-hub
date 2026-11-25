@@ -1,93 +1,77 @@
 # Nyawit Hub — rancangan desain
 
-> **Status: rancangan penuh. Belum ada scaffold SvelteKit. Tunggu instruksi berikutnya untuk membangun.**
+Status: rancangan penuh dengan filter antislop aktif mode DURING. Belum ada kode SvelteKit. Foto belum diunduh, menunggu konfirmasi pemilik (R-23).
 
-## 1. Argumen halaman
+## 1. Argumen
 
-- Pembaca: pengguna Android/TV/desktop yang sudah kenal Nyawit lewat launcher, belum tahu repositori apa saja yang tersedia.
-- Kata pemilik: "Tempat semua aplikasi Nyawit dikumpulkan, dengan wajah perjuangan rakyat."
-- Satu kepercayaan setelah satu layar: ini bukan katalog netral; ini daerah perjuangan digital dengan salam tiga jari sebagai penanda.
-- Bukti: daftar aplikasi nyata + rilis GitHub nyata + foto-foto perjuangan rakyat Indonesia dari Wikimedia Commons.
-- Tindakan berikutnya: buka atau unduh aplikasi dari tabel.
+Pembaca: pengguna Android, TV, dan desktop yang sudah mengenal Nyawit lewat launcher dan ingin tahu aplikasi apa saja yang tersedia.
+
+Kata pemilik: tempat semua aplikasi Nyawit dikumpulkan, dengan wajah perjuangan rakyat.
+
+Satu kepercayaan setelah satu layar: ini bukan katalog netral. Ini daerah perjuangan digital dengan salam tiga jari sebagai penanda.
+
+Bukti: daftar aplikasi nyata, tautan rilis GitHub nyata, dan foto arsip serta aksi rakyat dari Wikimedia Commons.
+
+Tindakan berikutnya: buka atau unduh aplikasi dari tabel.
 
 ### Klaim per bagian
 
-1. Saya berdiri di bawah salam tiga jari. → foto pembuka salah satu aksi 2026.
-2. Tiga jari itu bukan hiasan; ia berbicara tentang rakyat. → paragraf pendek dengan sumber.
-3. Perjuangan ini punya aplikasi nyata. → tabel 5 aplikasi + tautan rilis.
-4. Jejaknya bisa dicek. → daftar sumber foto dan tahun, bukan testimoni rekaan.
-5. Ambil aplikasinya sekarang. → satu tautan berhak cipta penuh: GitHub Releases.
+1. Saya berdiri di bawah salam tiga jari. Bukti: foto aksi 2026 di pembuka.
+2. Tiga jari bukan hiasan. Bukti: catatan bersumber dari RRI dan NU Online.
+3. Gerakan rakyat bukan makar. Bukti: pernyataan pemilik, dipertahankan sebagai suara, bukan statistik.
+4. Perjuangan ini punya aplikasi nyata. Bukti: lima baris tabel dengan tautan rilis.
+5. Jejaknya bisa dicek. Bukti: daftar sumber foto dan tahun, tanpa testimoni rekaan.
+6. Ambil aplikasinya sekarang. Bukti: satu tautan ke GitHub Releases.
 
 ## 2. Kalimat ide
 
-> Di halaman ini, **tiga jari Nyawit menjadi tajuk cetak dari perjuangan yang masih berjalan** — bukan logo, melainkan janji yang dicetak merah di atas hitam.
+Di halaman ini, tiga jari Nyawit menjadi tajuk cetak dari perjuangan yang masih berjalan, bukan logo, melainkan janji yang dicetak merah di atas hitam.
 
-Satu hal hidup: pengunjung membuka / mengunduh aplikasi langsung dari tabel.
+Satu hal hidup: pengunjung membuka atau mengunduh aplikasi langsung dari tabel.
 
-## 3. Arah: *The printed annual*
+## 3. Arah dan dial
 
-Arah yang dipilih dari `design-taste-frontend`: **printed annual**. Tiga opsi lain ditolak karena `sentence-as-layout` terlalu generik untuk katalog, dan `pinned-poster` butuh lebih banyak foto dari yang tersedia.
+Arah: printed annual. Detail lengkap ada di DESIGN.md.
 
-- Sumbu vertikal tetap di **42% lebar viewport**. Semua judul mulai di sana; kolom kiri berisi catatan kecil.
-- Masthead: pita foto lebar di 45% layar pertama, lalu judul besar di bawahnya.
-- Halaman berganti antara halaman teks (judul di sumbu, isi di kanan) dan halaman warna penuh dengan satu foto besar / mozaik.
-- Tidak ada kartu, tidak ada bayangan, tidak ada gradien, tidak ada eyebrow label, tidak ada monospace.
+Dial: ENERGY 2 / RHYTHM 3 / MOTION 1.
 
-### Tipografi
+Design Read: reading this as a public manifesto and app index for Nyawit followers, in printed-report style, dial ENERGY 2 / RHYTHM 3 / MOTION 1.
 
-- Display **EB Garamond** italic, 400, sentence case, tracking `-0.01em`, leading `1.1`.
-- Teks **EB Garamond** 400; emphatic 500. Body 16–21px, leading `1.5`.
-- Lima ukuran: `13 / 16 / 20 / 26 / 40px`, dengan clamp mengikuti `design-taste-frontend`.
-- Tidak ada bold, tidak ada all-caps panjang.
+Sumbu tetap di 42% lebar. Judul mulai di sumbu. Kolom kiri berisi catatan kecil. Ragam bagian datang dari perubahan komposisi, bukan dari kartu.
 
-### Warna
+## 4. Judul dan suara
 
-```
---bg: #0a0a0a;        --surface: #151515;
---ink: #efefef;       --muted: #8c8c8c;
---accent: #b11226;    --accent-ink: #ffffff;
---field-1: #efefef;   --field-1-ink: #0a0a0a;
-```
+Judul dua baris: "Tiga jari, untuk rakyat"
 
-Hitam + merah tua. Merah hanya pada satu garis bawah kata, satu angka, dan satu aksi. Bagian akhir boleh membalik ke field terang.
+Supporting line: Nyawit Hub mengumpulkan aplikasi nyawit-dev dalam satu daerah: katalog, unduhan, dan jejak perjuangan digital.
 
-## 4. Judul dan salinan
+Pernyataan pemilik, dipakai apa adanya dan ditandai sebagai suara pemilik, bukan klaim statistik:
 
-**Judul (2 baris, maks ~20 karakter per baris):**
+> Gerakan rakyat bukan makar. Kami ingin Indonesia menjadi negara yang lebih baik. Kami bukan tak sayang, tapi kami marah negara dikelola orang bodoh.
 
-> Tiga jari,
-> untuk rakyat
+Kalimat ini masuk sebagai paragraf pernyataan di bagian Tentang, bukan headline, dengan ukuran maksimal 26px desktop dan 22px ponsel. Kata "tapi" dan "tak" dipertahankan karena itu suara asli pemilik. R-37 mengizinkan suara pemilik mengalahkan gaya default, kecuali R-02. Tidak ada em dash di kalimat ini.
 
-**Supporting line:**
+Nav: NYAWIT / HUB, Tentang, Aplikasi, Jejak, GitHub. Semua menuju bagian yang ada atau URL nyata (R-24).
 
-> Nyawit Hub mengumpulkan aplikasi nyawit-dev dalam satu daerah: katalog, unduhan, dan jejak perjuangan digital.
-
-**Nav:** `NYAWIT / HUB` · `Tentang` · `Aplikasi` · `Jejak` · `GitHub`
-
-**Catatan:** tidak ada frasa "selamat datang", "kenalan", "modern", "powerful", "solusi", "platform", atau tricolon.
+Tidak dipakai: selamat datang, kenalan, modern, powerful, solusi, platform, unlock, seamless, revolutionary, next generation.
 
 ## 5. Susunan bagian
 
-### Hero — Narrow talk, wide headline
+### Hero, narrow talk wide headline
 
-- Kolom kiri 34%: wordmark, satu kalimat pendukung 22px (±24ch), satu action solid berbentuk persegi.
-- Kolom kanan: headline EB Garamond italic 40px clamp, dua baris, mulai tepat di sumbu 42%.
-- Foto pembuka di bawah headline, terpotong tepi bawah layar.
-- Blok merah 260px berisi angka **3** (40px) + satu baris "jari untuk rakyat", menimpa sudut kiri atas foto.
-- Mobile: satu kolom margin 20px, headline lebih dulu, foto 4:3 penuh lebar.
+Kolom kiri 34% berisi wordmark, satu kalimat pendukung 22px kurang lebih 24 karakter per baris, dan satu aksi persegi. Kolom kanan berisi headline dua baris mulai tepat di sumbu 42%. Foto aksi tiga jari terpotong tepi bawah layar. Blok merah 260px berisi angka 3 dan satu baris "jari untuk rakyat", menimpa sudut kiri atas foto.
 
-### Tentang — Portrait as drop cap
+Ponsel: satu kolom, margin 20px, headline lebih dulu, foto 4:3 penuh lebar.
 
-- Judul kecil di sumbu: **Salam tiga jari**.
-- Paragraf pernyataan 50–80 kata, 24–38px, kolom 3–12. Foto persegi mengapung di awal paragraf setinggi tiga baris.
-- Fakta di kolom kiri: ` Indonesia ` · ` 2026 ` · ` Sumber: RRI, NU Online`.
-- Makna salam dipilah sebagai catatan bersumber, bukan klaim mutlak: RRI menyebut keberanian, solidaritas, dan perlawanan; NU Online menyebutnya saat rakyat menyampaikan aspirasi. Tautan sumber di badan teks.
+### Tentang, portrait as drop cap
 
-### Aplikasi — Statement, table pushed right
+Judul kecil di sumbu: Salam tiga jari. Paragraf 50 sampai 80 kata, 24 sampai 38px, kolom 3 sampai 12. Foto persegi mengapung di awal paragraf setinggi tiga baris. Paragraf pernyataan pemilik mengikuti sebagai `<blockquote>` pada ukuran 26px. Catatan kiri: Indonesia, 2026, sumber RRI dan NU Online.
 
-- Judul: **Aplikasi untuk rakyat** (2 baris di desktop, inden 3vw).
-- Tabel di kolom 8–12; kolom 1–7 kosong kecuali satu kata "Rilis".
-- 5 baris nyata, 26px antar baris, tidak ada garis kecuali spasi:
+Makna salam dibaca sebagai catatan bersumber, bukan klaim tunggal. RRI menyebut keberanian, solidaritas, dan perlawanan. NU Online menyebut penggunaannya saat rakyat menyampaikan aspirasi. Tautan sumber melekat di teks.
+
+### Aplikasi, table pushed right
+
+Judul: Aplikasi untuk rakyat. Tabel di kolom 8 sampai 12, kolom kiri menyisakan satu kata "Rilis". Lima baris, tanpa garis pemisah:
 
 | Jenis | Nama | Rilis |
 | --- | --- | --- |
@@ -97,72 +81,66 @@ Hitam + merah tua. Merah hanya pada satu garis bawah kata, satu angka, dan satu 
 | Game | Garis Game | v1.0.1 |
 | Papan | Monopoly KMP | v1.3.0 |
 
-- Setiap baris menaut ke `github.com/nyawit-dev/<repo>/releases/latest`.
-- Satu foto 4:5 di kolom 1–4, sejajar dengan baris terakhir.
-- Mobile: tabel penuh lebar, foto 60% di kanan bawah.
+Tiap baris menaut ke github.com/nyawit-dev/<repo>/releases/latest. Satu foto 4:5 di kolom 1 sampai 4 sejajar baris terakhir. Ponsel: tabel penuh lebar, foto 60% di kanan bawah.
 
-### Jejak — Plain names in columns
+### Jejak, plain names in columns
 
-- Judul **Jejak perjuangan** di kolom 1–3.
-- Kolom 5–12 berisi nama-nama sumber dan tahun dalam 3 kolom teks, tanpa kotak/bullet/garis:
-  - `Aksi 28 Oktober 2026` · Kaliper1 · CC0 · Wikimedia Commons
-  - `Mahasiswa IKJ, 10 November 2026` · Hariadhi · CC BY-SA 4.0
-  - `Women training, 1945` · Mabes ABRI · public domain
-  - `Indonesia Revolution Guerilla, 1949` · public domain
-  - `Indonesian National Revolution montage` · public domain
-- Tidak ada testimoni, logo, angka pengguna, atau klaim yang tidak bisa dicek.
+Judul Jejak perjuangan di kolom 1 sampai 3. Kolom 5 sampai 12 berisi daftar sumber dan tahun dalam tiga kolom teks tanpa kotak, bullet, atau garis. Isi: Aksi 28 Oktober 2026, Mahasiswa IKJ 10 November 2026, Women training 1945, Indonesia Revolution Guerilla 1949, montase Revolusi Nasional. Tidak ada testimoni, logo, angka pengguna, atau klaim tak tersource.
 
-### Seruan — Three photographs, then a field
+### Seruan, three photographs then a field
 
-- Tiga foto berdampingan tanpa gutter, 40svh, `object-fit: cover`, satu treatment greyscale.
-- Di bawahnya band field terang setinggi ~44svh. Kalimat penutup 26–30px, satu frasa digarisbawahi 4px dan itulah tautannya: **buka rilis terbaru**.
-- Dua baris kecil di bawahnya: "Lima aplikasi. Satu akun. Semua rilis di GitHub."
-- Tidak ada tombol di sini.
+Tiga foto berdampingan tanpa gutter, 40svh, object-fit cover, satu treatment greyscale. Band field terang 44svh. Kalimat penutup 26 sampai 30px dengan satu frasa digarisbawahi 4px dan itulah tautannya: Buka rilis terbaru. Dua baris kecil: Lima aplikasi. Satu akun. Semua rilis di GitHub. Tanpa tombol.
 
-### Footer — Name first
+### Footer, name first
 
-- Field terang/ink invers. Wordmark **NYAWIT / HUB** span penuh, bagian atas huruf dipotong tepi bagian (bukan atas, agar lolos inspector).
-- 72px di bawah: `GitHub` · `Releases` · `Nyawit Launcher` sebagai tautan besar 32–36px.
-- Kolom kecil kanan: `Tentang`, `Aplikasi`, `Jejak`, `Sumber foto`.
-- Baris terakhir: "Dibangun dengan SvelteKit dan GitHub Pages" + `Kembali ke atas`.
+Field terang. Wordmark NYAWIT / HUB span penuh, dipotong tepi bawah huruf, bukan atas. Tautan besar: GitHub, Releases, Nyawit Launcher. Kolom kecil kanan: Tentang, Aplikasi, Jejak, Sumber foto. Baris akhir: Dibangun dengan SvelteKit dan GitHub Pages, serta Kembali ke atas.
 
-## 6. Foto (semua nyata, akan diunduh saat build)
+## 6. Kandidat foto nyata
 
-| Ref | Subjek | Sumber | Lisensi | Pemakaian |
-| --- | --- | --- | --- | --- |
-| `commons:202571033` | Salam tiga jari, okt 2026 | Wikimedia Commons | CC0 | Masthead |
-| `commons:202570994` | Mahasiswa tiba, okt 2026 | Wikimedia Commons | CC0 | Drop cap + mozaik |
-| `commons:203060012` | Mahasiswa IKJ, 10 Nov 2026 | Wikimedia Commons | CC BY-SA 4.0 | Strip seruan |
-| `commons:79789470` | Latihan perempuan, 1945 | Wikimedia Commons | public domain | Tentang / mozaik |
-| `commons:64484436` | Guerilla, 1949 | Wikimedia Commons | public domain | Strip seruan |
-| `commons:106073287` | Montase Revolusi Nasional | Wikimedia Commons | public domain | Jejak |
+Belum diunduh. Perlu konfirmasi pemilik sebelum dipakai (R-23).
 
-Semua foto diberi satu treatment: `grayscale(1) contrast(1.05)`. Foto dengan subjek kekerasan ekstrem tidak dipakai. Kredit lengkap dicantumkan di bagian Jejak dan footer.
+| Ref | Subjek | Lisensi | Pemakaian |
+| --- | --- | --- | --- |
+| commons:202571033 | Salam tiga jari, okt 2026 | CC0 | Masthead |
+| commons:202570994 | Mahasiswa tiba, okt 2026 | CC0 | Drop cap dan mozaik |
+| commons:203060012 | Mahasiswa IKJ, 10 Nov 2026 | CC BY-SA 4.0 | Seruan |
+| commons:79789470 | Latihan perempuan, 1945 | public domain | Tentang |
+| commons:64484436 | Gerilya, 1949 | public domain | Seruan |
+| commons:106073287 | Montase Revolusi Nasional | public domain | Jejak |
 
-Video: pencarian CC untuk "Indonesia three finger salute protest" tidak menghasilkan klip yang bisa dipakai. Tidak ada video placeholder; gerakan halaman memakai reveal judul saja.
+Semua foto dapat satu treatment `grayscale(1) contrast(1.05)`. Foto dengan subjek kekerasan ekstrem tidak dipakai. Kredit lengkap muncul di Jejak dan footer.
 
-## 7. Gerakan
+Pencarian klip CC untuk aksi salam tiga jari tidak menghasilkan video yang layak. Tidak ada video placeholder.
 
-- Signature: *masked line reveal* pada dua baris judul, 900ms ease-out, baris kedua +110ms.
-- Masuk tiap bagian: fade + 12px translate, 300ms, hanya sekali.
-- Feedback kontrol: underline merah menebal saat hover/focus.
-- Tidak ada parallax, tidak ada scroll-jacking, tidak ada animate-on-everything.
+## 7. Alasan keputusan, R-31
+
+- Hitam dipilih karena merepresentasikan kertas cetak dan memberi tinta ruang, bukan karena dark mode tech.
+- Merah dipilih karena warna perjuangan dan dipakai satu kali agar menjadi aksen, bukan dekorasi.
+- EB Garamond dipilih karena memberi suara laporan cetak, bukan suara dashboard.
+- Sumbu 42% dipilih karena satu aturan geometri mengikat semua bagian.
+- Tabel dipilih karena isinya data rilis, bukan kartu fitur.
+- Foto greyscale dipilih karena menyatukan arsip 1945 dan aksi 2026.
+- Tanpa bayangan, grid, glow, kaca, badge, dan ikon karena tidak ada fungsi hierarki yang mereka layani.
+- Reveal judul dipilih karena menandai awal baca, bukan karena tren animasi.
 
 ## 8. Teknologi dan rilis
 
-- **SvelteKit 2 + Svelte 5**, adapter-static, `prerender = true`, seluruh halaman statis.
-- Satu halaman (`src/routes/+page.svelte`), satu file data (`src/lib/data.ts`), satu stylesheet global.
-- Tidak ada server, tidak ada API key, tidak ada runtime fetch dari GitHub (data rilis ditautkan statis).
-- GitHub Actions: `checkout@v4` → `setup-node@v4` (Node 22) → `npm ci` → `npm run build` → `configure-pages@v5` → `upload-pages-artifact@v3` → `deploy-pages@v4`.
-- Trigger: push ke `main` + `workflow_dispatch`.
-- Target: `https://nyawit-dev.github.io/nyawit-hub/`.
-- Semua build hanya di GitHub Actions, tidak lokal.
+SvelteKit 2 dan Svelte 5, adapter-static, prerender seluruh halaman. Satu halaman, satu file data, satu stylesheet. Tidak ada server, API key, atau runtime fetch GitHub.
 
-## 9. Kunci anti-slop
+GitHub Actions: checkout, setup-node 22, npm ci, npm run build, configure-pages, upload-pages-artifact, deploy-pages. Trigger push main dan workflow_dispatch. Target https://nyawit-dev.github.io/nyawit-hub/.
 
-- Tidak ada kartu generik, ikon dekoratif, emoji, atau "fitur unggulan".
-- Tidak ada "Est.", koordinat, status dot, "scroll to explore", version stamp furniture.
-- Tidak ada 3 item paralel paksa; jumlah baris mengikuti data (5 aplikasi, 5 jejak).
-- Tidak ada em dash berulang, tidak ada kata "unlock/empower/seamless/robust".
-- Setiap teks minimal 13px; body minimal 16px; heading maksimal dua baris di 1440/768/390.
-- Sebelum rilis: jalankan `lint.mjs` dan `inspect.mjs` dari skill; perbaiki temuan sebelum deploy.
+Semua build hanya di GitHub Actions.
+
+## 9. Status Delivery Gate antislop, tahap rancangan
+
+Mode: DURING, session override.
+
+Hard Gate, R-02 sampai R-40: tidak ada em dash di semua teks rancangan. Tidak ada statistik tanpa sumber. Tidak ada testimoni. Nav hanya ke bagian yang ada. Tidak ada tombol mati. Tidak ada klaim fabrikasi. Semua tautan rilis nyata. Teks minimal 13px, body 16px ke atas, kontras AA direncanakan. Ini dokumen rancangan, jadi tidak ada build atau klik yang diklaim; R-35 akan dijalankan penuh saat kode dibangun (N/A untuk sekarang, bukan PASS).
+
+Purpose-Gate: tidak ada gradien, glow, glass, shadow, badge, ikon generik, ilustrasi generik, atau kartu identik yang dipakai tanpa alasan. Setiap teknik yang dipakai memiliki alasan tertulis di bagian 7 (R-31).
+
+Liveliness: dial dinyatakan, RHYTHM 3 didukung oleh lima komposisi berbeda, satu focal point per layar, whitespace sebagai struktur, satu aksen merah, motif tiga jari berulang, Design Read dinyatakan sebelum rancangan.
+
+Craftsmanship: tidak ada template Hero plus kartu, tidak ada How It Works tiga langkah, tidak ada Trusted By, tidak ada clone produk populer, tidak ada buzzword R-16.
+
+Menunggu keputusan pemilik: konfirmasi kandidat foto (R-23). Setelah itu baru scaffold SvelteKit, build via Actions, lalu Delivery Gate final dengan click-through (R-35).
