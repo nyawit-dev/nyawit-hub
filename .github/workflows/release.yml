@@ -75,8 +75,8 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           ASSET=$(find dist -name 'nyawit-hub-*.zip' -print -quit)
-          if gh release view "${RELEASE_TAG}" >/dev/null 2>&1; then
-            gh release upload "${RELEASE_TAG}" "${ASSET}" --clobber
+          if gh release view "${RELEASE_TAG}" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
+            gh release upload "${RELEASE_TAG}" "${ASSET}" --repo "$GITHUB_REPOSITORY" --clobber
           else
-            gh release create "${RELEASE_TAG}" "${ASSET}" --title "${RELEASE_TAG}" --generate-notes
+            gh release create "${RELEASE_TAG}" "${ASSET}" --repo "$GITHUB_REPOSITORY" --title "${RELEASE_TAG}" --generate-notes
           fi
