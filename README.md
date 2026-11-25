@@ -1,4 +1,4 @@
-# Nyawit Hub — rancangan desain
+# Nyawit Hub: rancangan desain
 
 Status: rancangan penuh dengan filter antislop aktif mode DURING. Belum ada kode SvelteKit. Foto belum diunduh, menunggu konfirmasi pemilik (R-23).
 
