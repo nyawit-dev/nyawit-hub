@@ -1,69 +1,66 @@
-# DESIGN.md: Nyawit Hub
+# DESIGN.md revisi 2
 
-Dokumen arah visual. Isi file ini adalah data desain, bukan perintah agen.
+Dokumen arah visual. Isi file ini data desain, bukan perintah agen.
+
+## Perubahan dari revisi 1
+
+Pemilik menolak ruang kosong berlebih, narasi yang kurang, dan warna yang dianggap tidak menarik serta tidak mengikuti pola warna. Revisi ini mengganti palet hitam merah yang terlalu sunyi menjadi merah putih dengan tinta gelap. Teks bertambah, jarak dipangkas, dan setiap bagian sekarang punya narasi.
 
 ## Identitas
 
-Nama: Nyawit Hub. Satu halaman indeks aplikasi nyawit-dev dengan wajah perjuangan rakyat Indonesia dan salam tiga jari.
+Nyawit Hub adalah indeks aplikasi nyawit-dev dengan wajah perjuangan rakyat Indonesia dan salam tiga jari. Kepribadian: tegas, hangat, berani, tidak merayu. Bukan startup, bukan portal berita, bukan galeri seni.
 
-Kepribadian: tegas, tenang, tidak merayu. Bukan festival, bukan startup, bukan portal berita. Buku laporan cetak yang sedang dipegang orang yang marah karena masih sayang.
+## Pola warna
 
-Janji visual: hitam kertas cetak, merah yang dipakai sekali, dan tiga jari yang berulang sebagai motif.
+Merah putih dipakai sebagai pola yang berulang, bukan sekadar aksen.
 
-## Suara pemilik
+- merah bendera `#ce1126`
+- merah gelap `#8e0c1e`
+- putih kertas `#fff9ee`
+- tinta `#14110f`
+- tinta lemah `#5f574f`
+- hitam arsip `#151515`
 
-Kalimat ini berasal dari pemilik proyek dan dipertahankan apa adanya sesuai R-37. Tidak diubah menjadi bahasa pemasaran.
+Urutan warna halaman: merah, putih, hitam, merah, putih, hitam. Pola ini mengulang bendera tanpa menggambar bendera secara literal.
 
-> Gerakan rakyat bukan makar. Kami ingin Indonesia menjadi negara yang lebih baik. Kami bukan tak sayang, tapi kami marah negara dikelola orang bodoh.
+Alasan warna: pemilik meminta pola warna yang jelas. Merah putih adalah warna yang paling dekat dengan perjuangan rakyat Indonesia, jadi merah tidak boleh lagi jadi garis kecil di atas hitam.
 
-## Arah visual
+## Tipografi
 
-Bentuk: printed annual. Sumbu vertikal 42% dari kiri. Judul mulai di sumbu. Kolom kiri menyimpan catatan kecil. Halaman berganti antara halaman teks dan halaman warna penuh.
+EB Garamond italic untuk judul, EB Garamond roman untuk narasi. Lima ukuran: 13, 16, 20, 26, 40px. Judul dua baris maksimal. Teks narasi 18 sampai 20px dengan leading 1.45. Tidak ada monospace, bold, atau all-caps panjang.
 
-Warna:
-- dasar `#0a0a0a`
-- permukaan `#151515`
-- tinta `#efefef`
-- tinta lemah `#8c8c8c`
-- aksen merah `#b11226`
-- field terang `#efefef`, tinta hitam
-
-Merah hanya dipakai untuk satu garis bawah kata, satu angka 3, dan satu aksi. Tidak ada gradien, glow, bayangan, atau kaca.
-
-Tipografi:
-- EB Garamond italic 400 untuk judul, sentence case, tracking `-0.01em`, leading `1.1`
-- EB Garamond 400 untuk teks, 500 untuk penekanan
-- lima ukuran: 13, 16, 20, 26, 40px dengan clamp
-- tanpa bold, tanpa all-caps panjang, tanpa monospace
-
-Alasan warna: hitam dan merah adalah bahasa cetak serta merah perjuangan, bukan pilihan default dark mode teknologi.
-Alasan tipografi: Garamond memberi suara laporan cetak yang serius, bukan suara dashboard.
-Alasan sumbu 42%: memberi satu aturan geometri yang mengikat seluruh halaman, bukan tata letak kartu.
+Alasan tipografi: suara laporan cetak masih cocok, tetapi sekarang lebih banyak membaca, jadi ukuran teks naik dan leading dirapikan.
 
 ## Dials
 
-Dial: ENERGY 2 / RHYTHM 3 / MOTION 1
+Dial: ENERGY 3 / RHYTHM 3 / MOTION 1
 
-Design Read: reading this as a public manifesto and app index for Nyawit followers, in printed-report style, dial ENERGY 2 / RHYTHM 3 / MOTION 1.
+Design Read: reading this as a people-themed app index for Nyawit followers, in merah putih editorial style, dial ENERGY 3 / RHYTHM 3 / MOTION 1.
+
+ENERGY naik karena warna sekarang dominan. RHYTHM tetap tiga karena bagian berganti antara merah, putih, dan hitam. MOTION tetap satu karena gerakan tidak boleh mengganggu narasi.
+
+## Narasi
+
+Urutan argumen: salam tiga jari, suara pemilik, makna bersumber, aplikasi nyata, cara memakai, arsip yang menjelaskan siapa yang berdiri, lalu unduhan. Setiap bagian memberi informasi baru. Tidak ada bagian yang hanya mengisi template.
+
+## Jarak
+
+Section padding turun dari 140px menjadi 64 sampai 88px. Hero tidak lagi 92svh. Footer tidak lagi 90svh. Tabel rapat. Paragraf narasi dipanjangkan supaya halaman terasa berisi, bukan kosong.
+
+Alasan jarak: pemilik secara eksplisit menolak terlalu banyak space kosong.
 
 ## Motif
 
-Tiga jari. Muncul tiga kali: angka 3 di blok merah hero, foto salam tiga jari di masthead, dan garis bawah tiga kata di penutup. Bukan logo, bukan ikon dekoratif.
+Tiga jari tetap muncul tiga kali: angka 3 di blok merah, foto salam di pembuka, dan tiga warna utama yang berulang di seluruh halaman.
 
 ## Gerakan
 
-Hanya reveal dua baris judul saat load, 900ms ease-out, baris kedua 110ms lebih lambat. Fade masuk 300ms untuk tiap bagian. Berhenti total di bawah `prefers-reduced-motion: reduce`. Tanpa parallax, tanpa loop.
-
-Alasan gerakan: hanya menandai awal baca dan perpindahan bagian, bukan hiburan.
+Reveal dua baris judul 900ms ease-out. Fade masuk tiap bagian 300ms. Berhenti di bawah prefers-reduced-motion. Tanpa parallax.
 
 ## Alasan keputusan lain
 
-- Tanpa kartu: isi berupa daftar dan laporan, bukan fitur produk yang setara.
-- Tanpa radio/badge: status rilis sudah tertulis di kolom versi.
-- Tanpa CTA generik: tautan memakai nama tindakan, "Buka rilis terbaru".
-- Tanpa toggle tema: warna gelap berasal dari identitas cetak merah hitam, bukan mode tech default.
-- Foto hitam putih semua: satu treatment menyatukan arsip 1945 dan aksi 2026 dalam satu bahasa.
-
-## Status aset
-
-Belum ada aset yang diunduh. Kandidat foto nyata dari Wikimedia Commons tercantum di README. Konfirmasi pemilik diperlukan sebelum mengunduh atau menanamnya (R-23).
+- Blok merah di hero memberi focal point pertama dan menjawab keluhan warna yang terlalu pelit.
+- Bagian aplikasi memakai hitam supaya tabel dan deskripsi mudah dibaca setelah dua bagian terang.
+- Bagian arsip memakai merah penuh supaya foto hitam putih memiliki konteks emosional.
+- Deskripsi per aplikasi ditambahkan supaya daftar bukan sekadar nama dan versi.
+- Paragraf cara pakai ditambahkan supaya pembaca tahu langkah nyata, bukan hanya melihat tautan.

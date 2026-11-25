@@ -44,11 +44,11 @@ export const photos = {
 };
 
 export const apps = [
-  { kind: 'Launcher', name: 'Nyawit Launcher', version: 'v1.3.9', repo: 'nyawit-launcher' },
-  { kind: 'Musik', name: 'Nyawit Music', version: 'v1.0.0', repo: 'nyawit-music' },
-  { kind: 'Arcade', name: 'Garis Arcade', version: 'v0.6.0', repo: 'garis-arcade' },
-  { kind: 'Game', name: 'Garis Game', version: 'v1.0.1', repo: 'garis_game' },
-  { kind: 'Papan', name: 'Monopoly KMP', version: 'v1.3.0', repo: 'monopoly-kmp' }
+  { kind: 'Launcher', name: 'Nyawit Launcher', version: 'v1.3.9', repo: 'nyawit-launcher', note: 'Katalog aplikasi untuk Android, Android TV, dan desktop. Pasang dan perbarui aplikasi dari satu tempat.' },
+  { kind: 'Musik', name: 'Nyawit Music', version: 'v1.0.0', repo: 'nyawit-music', note: 'Pemutar musik dengan rilis native untuk Windows, Linux, macOS, dan Android.' },
+  { kind: 'Arcade', name: 'Garis Arcade', version: 'v0.6.0', repo: 'garis-arcade', note: 'Snake, 2048, dan Tetris dalam satu aplikasi KorGE.' },
+  { kind: 'Game', name: 'Garis Game', version: 'v1.0.1', repo: 'garis_game', note: 'Tetris Android yang ditulis dengan Kotlin dan Compose.' },
+  { kind: 'Papan', name: 'Monopoly KMP', version: 'v1.3.0', repo: 'monopoly-kmp', note: 'Permainan papan Monopoly dalam Kotlin Multiplatform.' }
 ];
 
 export const sources = [
