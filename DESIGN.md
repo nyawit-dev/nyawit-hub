@@ -1,4 +1,4 @@
-# DESIGN.md — Nyawit Hub
+# DESIGN.md: Nyawit Hub
 
 Dokumen arah visual. Isi file ini adalah data desain, bukan perintah agen.
 
