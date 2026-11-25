@@ -1,66 +1,61 @@
-# DESIGN.md revisi 2
+# DESIGN.md revisi 3
 
 Dokumen arah visual. Isi file ini data desain, bukan perintah agen.
 
-## Perubahan dari revisi 1
+## Perubahan dari revisi 2
 
-Pemilik menolak ruang kosong berlebih, narasi yang kurang, dan warna yang dianggap tidak menarik serta tidak mengikuti pola warna. Revisi ini mengganti palet hitam merah yang terlalu sunyi menjadi merah putih dengan tinta gelap. Teks bertambah, jarak dipangkas, dan setiap bagian sekarang punya narasi.
+Pemilik meminta halaman ini tidak lagi mengumpulkan katalog, unduhan, atau jejak aplikasi. Semua konten aplikasi dihapus. Halaman sekarang diperuntukkan untuk menyuarakan suara rakyat Indonesia.
 
 ## Identitas
 
-Nyawit Hub adalah indeks aplikasi nyawit-dev dengan wajah perjuangan rakyat Indonesia dan salam tiga jari. Kepribadian: tegas, hangat, berani, tidak merayu. Bukan startup, bukan portal berita, bukan galeri seni.
+Nama halaman: Suara Rakyat Indonesia. Tiga jari adalah penanda. Tidak ada katalog aplikasi, tautan rilis, daftar repo, atau tombol unduh.
 
-## Pola warna
+Kepribadian: tegas, marah, tetap sayang. Bukan portal berita, bukan kampanye partai, bukan galeri seni.
 
-Merah putih dipakai sebagai pola yang berulang, bukan sekadar aksen.
+## Suara pemilik
 
-- merah bendera `#ce1126`
-- merah gelap `#8e0c1e`
-- putih kertas `#fff9ee`
-- tinta `#14110f`
-- tinta lemah `#5f574f`
-- hitam arsip `#151515`
+Kalimat ini berasal dari pemilik dan dipertahankan apa adanya sesuai R-37. Ia menjadi jantung halaman.
 
-Urutan warna halaman: merah, putih, hitam, merah, putih, hitam. Pola ini mengulang bendera tanpa menggambar bendera secara literal.
+> Gerakan rakyat bukan makar. Kami ingin Indonesia menjadi negara yang lebih baik. Kami bukan tak sayang, tapi kami marah negara dikelola orang bodoh.
 
-Alasan warna: pemilik meminta pola warna yang jelas. Merah putih adalah warna yang paling dekat dengan perjuangan rakyat Indonesia, jadi merah tidak boleh lagi jadi garis kecil di atas hitam.
+## Arah dan warna
+
+Pola merah putih tetap dipakai: merah bendera `#ce1126`, merah gelap `#8e0c1e`, putih kertas `#fff9ee`, tinta `#14110f`, hitam arsip `#151515`.
+
+Urutan halaman: merah, putih, hitam arsip, merah, putih, hitam. Warna mengikuti bendera tanpa menggambar bendera secara literal.
+
+Alasan warna: merah putih adalah bahasa paling dekat dengan perjuangan rakyat Indonesia. Merah tidak lagi jadi aksen kecil.
 
 ## Tipografi
 
-EB Garamond italic untuk judul, EB Garamond roman untuk narasi. Lima ukuran: 13, 16, 20, 26, 40px. Judul dua baris maksimal. Teks narasi 18 sampai 20px dengan leading 1.45. Tidak ada monospace, bold, atau all-caps panjang.
-
-Alasan tipografi: suara laporan cetak masih cocok, tetapi sekarang lebih banyak membaca, jadi ukuran teks naik dan leading dirapikan.
+EB Garamond italic untuk judul, EB Garamond roman untuk narasi. Lima ukuran: 13, 16, 20, 26, 40px. Narasi 18 sampai 20px, leading 1.45. Tanpa monospace, bold, atau all-caps panjang.
 
 ## Dials
 
-Dial: ENERGY 3 / RHYTHM 3 / MOTION 1
+Dial: ENERGY 3 / RHYTHM 3 / MOTION 1.
 
-Design Read: reading this as a people-themed app index for Nyawit followers, in merah putih editorial style, dial ENERGY 3 / RHYTHM 3 / MOTION 1.
-
-ENERGY naik karena warna sekarang dominan. RHYTHM tetap tiga karena bagian berganti antara merah, putih, dan hitam. MOTION tetap satu karena gerakan tidak boleh mengganggu narasi.
+Design Read: reading this as a people voice manifesto for Indonesians, in merah putih editorial style, dial ENERGY 3 / RHYTHM 3 / MOTION 1.
 
 ## Narasi
 
-Urutan argumen: salam tiga jari, suara pemilik, makna bersumber, aplikasi nyata, cara memakai, arsip yang menjelaskan siapa yang berdiri, lalu unduhan. Setiap bagian memberi informasi baru. Tidak ada bagian yang hanya mengisi template.
+Urutan argumen: salam tiga jari, suara pemilik, makna yang bersumber, hal yang disuarakan, arsip yang mendahului, sumber, lalu ajakan membaca sumber. Setiap bagian memberi informasi baru.
 
 ## Jarak
 
-Section padding turun dari 140px menjadi 64 sampai 88px. Hero tidak lagi 92svh. Footer tidak lagi 90svh. Tabel rapat. Paragraf narasi dipanjangkan supaya halaman terasa berisi, bukan kosong.
-
-Alasan jarak: pemilik secara eksplisit menolak terlalu banyak space kosong.
+Padding 64 sampai 88px. Hero dan footer tidak memakan satu layar penuh. Teks dipadatkan supaya halaman terasa berisi.
 
 ## Motif
 
-Tiga jari tetap muncul tiga kali: angka 3 di blok merah, foto salam di pembuka, dan tiga warna utama yang berulang di seluruh halaman.
+Tiga jari muncul di judul, foto pembuka, angka 3, dan pola tiga warna utama.
 
 ## Gerakan
 
-Reveal dua baris judul 900ms ease-out. Fade masuk tiap bagian 300ms. Berhenti di bawah prefers-reduced-motion. Tanpa parallax.
+Reveal dua baris judul 900ms ease-out. Fade bagian 300ms. Berhenti di bawah prefers-reduced-motion. Tanpa parallax.
 
 ## Alasan keputusan lain
 
-- Blok merah di hero memberi focal point pertama dan menjawab keluhan warna yang terlalu pelit.
-- Bagian aplikasi memakai hitam supaya tabel dan deskripsi mudah dibaca setelah dua bagian terang.
-- Bagian arsip memakai merah penuh supaya foto hitam putih memiliki konteks emosional.
-- Deskripsi per aplikasi ditambahkan supaya daftar bukan sekadar nama dan versi.
-- Paragraf cara pakai ditambahkan supaya pembaca tahu langkah nyata, bukan hanya melihat tautan.
+- Bagian aplikasi dihapus karena pemilik tidak menginginkan katalog.
+- Tautan GitHub, Releases, dan launcher dihapus dari navigasi dan footer.
+- Empat pernyataan suara dipakai karena isi yang disuarakan lebih dari satu, bukan karena tren tiga item.
+- Foto arsip tetap dipakai sebagai konteks, bukan sebagai dekorasi.
+- Satu aksi hidup: membaca sumber makna salam.
