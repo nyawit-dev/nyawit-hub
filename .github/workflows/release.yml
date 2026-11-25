@@ -1,0 +1,80 @@
+name: Release Nyawit Hub
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag rilis, misalnya v1.0.0'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event_name == 'workflow_dispatch' && 'main' || github.ref }}
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm install
+      - run: npm run build
+      - name: Set release version
+        run: |
+          TAG="${{ inputs.tag || github.ref_name }}"
+          echo "RELEASE_TAG=${TAG}" >> "$GITHUB_ENV"
+          echo "RELEASE_VERSION=${TAG#v}" >> "$GITHUB_ENV"
+      - name: Package static site
+        run: |
+          cd build
+          zip -r "../nyawit-hub-${RELEASE_VERSION}.zip" .
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nyawit-hub-site
+          path: nyawit-hub-*.zip
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+
+  release:
+    needs: deploy
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: nyawit-hub-site
+          path: dist
+      - name: Create or update GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          ASSET=$(find dist -name 'nyawit-hub-*.zip' -print -quit)
+          if gh release view "${RELEASE_TAG}" >/dev/null 2>&1; then
+            gh release upload "${RELEASE_TAG}" "${ASSET}" --clobber
+          else
+            gh release create "${RELEASE_TAG}" "${ASSET}" --title "${RELEASE_TAG}" --generate-notes
+          fi
